@@ -23,7 +23,7 @@
 (c) Setup google authentication
 	- Register application with Google
 	- Use passport for authentication middleware
-	
+
 
 
 
