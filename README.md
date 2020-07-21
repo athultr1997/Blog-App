@@ -30,5 +30,6 @@
 (h) Error handling
 (i) Create add story button
 (j) Add ck-editor
+(k) Create helper functions for express-handler
 
 

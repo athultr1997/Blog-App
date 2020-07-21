@@ -30,8 +30,16 @@ if(process.env.NODE_ENV === 'development') {
 	app.use(morgan('dev'))
 }
 
+//Handlebar helpers
+const {formatDate, truncate, stripTags} = require('./helpers/hbs')
+
 // Handlebars
 app.engine('.hbs', exphbs({
+	helpers: {
+		formatDate,
+		truncate,
+		stripTags,
+	},
 	defaultLayout: 'main',
 	extname: '.hbs'
 }))

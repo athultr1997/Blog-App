@@ -16,7 +16,7 @@
 			{{#each blogs}}
 				<tr>
 					<td><a href="/blogs/{{_id}}"></a>{{title}}</th>
-					<td>{{timeCreated}}</td>
+					<td>{{formatDate timeCreated 'LLLL'}}</td>
 					<td><span class="dash-status">{{visibility}}</span></td>
 					<td></td>
 				</tr>
