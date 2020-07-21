@@ -23,7 +23,12 @@
 (c) Setup google authentication
 	- Register application with Google
 	- Use passport for authentication middleware
-
-
+(d) Route protection middleware
+(e) Store session in database to avoid kicking out when page is reloaded
+(f) Make persistent logins
+(g) Make data models for user and blog
+(h) Error handling
+(i) Create add story button
+(j) Add ck-editor
 
 
