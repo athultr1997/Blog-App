@@ -15,10 +15,21 @@
 		<tbody>
 			{{#each blogs}}
 				<tr>
-					<td><a href="/blogs/{{_id}}"></a>{{title}}</th>
+					<td><a href="/blogs/{{_id}}">{{title}}</a></td>
 					<td>{{formatDate timeCreated 'LLLL'}}</td>
 					<td><span class="dash-status">{{visibility}}</span></td>
-					<td></td>
+					<td>
+						<a href="/blogs/edit/{{_id}}" class="btn btn-float blue">
+							<i class="fas fa-edit"></i>
+						</a>
+
+						<form action="/blogs/{{_id}}" method="POST" id="delete-form">
+							<input type="hidden" name="_method" value="DELETE">
+							<button type="submit" class="btn red">
+								<i class="fas fa-trash"></i>
+							</button>
+						</form>
+					</td>
 				</tr>
 			{{/each}}
 		</tbody>

@@ -5,6 +5,7 @@ const morgan = require('morgan')
 const exphbs = require('express-handlebars')
 const path = require('path')
 const passport = require('passport')
+const methodOverride = require('method-override')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
 const connectDB = require('./config/db')
@@ -25,13 +26,23 @@ const app = express()
 app.use(express.urlencoded({ extended: false}))
 app.use(express.json())
 
+// Method Override
+app.use(methodOverride((req, res) => {
+	if(req.body && typeof req.body === 'object' && '_method' in req.body) {
+		// look in urlencoded POST bodies and delete it
+		let method = req.body._method
+		delete req.body._method
+		return method
+	}
+}))
+
 // Load morgan for logging
 if(process.env.NODE_ENV === 'development') {
 	app.use(morgan('dev'))
 }
 
 //Handlebar helpers
-const {formatDate, truncate, stripTags} = require('./helpers/hbs')
+const {formatDate, truncate, stripTags, editIcon, select} = require('./helpers/hbs')
 
 // Handlebars
 app.engine('.hbs', exphbs({
@@ -39,6 +50,8 @@ app.engine('.hbs', exphbs({
 		formatDate,
 		truncate,
 		stripTags,
+		editIcon,
+		select,
 	},
 	defaultLayout: 'main',
 	extname: '.hbs'

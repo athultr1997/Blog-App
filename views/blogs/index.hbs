@@ -3,9 +3,9 @@
 <div class="row">
 	{{#each blogs}}
 		<div class="col s12 m4">
-			<div class="card blue lighten-3">
+			<div class="card red lighten-3">
 				<div class="card-image">
-					{{!-- todo: add icon --}}					
+					{{{editIcon user ../loggedUser _id}}}
 				</div>
 				<div class="card-content center-align">
 					<h5>{{title}}</h5>
@@ -17,7 +17,7 @@
 					</div>
 				</div>
 				<div class="card-action center-align">
-					<a href="/blogs/{{_id}}" class="btn cyan lighten-3">Read More</a>
+					<a href="/blogs/{{_id}}" class="btn grey darken-2">Read More</a>
 				</div>
 			</div>			
 		</div>

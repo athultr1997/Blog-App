@@ -31,5 +31,7 @@
 (i) Create add story button
 (j) Add ck-editor
 (k) Create helper functions for express-handler
+(l) Generating selected options in handlebar template when editing stories
+(m) Perform PUT request at places where client does not support using method-override
 
 
