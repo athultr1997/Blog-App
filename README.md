@@ -1,5 +1,7 @@
 # Building a Blogging Web Application from Scratch
 
+To see the application live in action please visit [Blog Application](https://blog-application-2020.herokuapp.com/)
+
 ## Setup
 1. Install all the dependencies:
 	* express
