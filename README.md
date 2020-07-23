@@ -1,6 +1,6 @@
 # Building a Blogging Web Application from Scratch
 
-https://travis-ci.com/athultr1997/Blog-App.svg?branch=master
+[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 
 To see the application live in action please visit [Blog Application](https://blog-application-2020.herokuapp.com/)
 
