@@ -1,37 +1,37 @@
-# Building a Web Application from scratch
+# Building a Blogging Web Application from Scratch
 
-## 1. Setup
-(a) Install all the dependencies:
-	- express
-	- mongoose
-	- connect-mongo
-	- express-session
-	- express-handlebars
-	- dotenv
-	- method-override
-	- moment
-	- morgan
-	- passport
-	- passport-google-oauth20
-(b) Install the developer dependencies:
-	- nodemon
-	- cross-env
+## Setup
+1. Install all the dependencies:
+	* express
+	* mongoose
+	* connect-mongo
+	* express-session
+	* express-handlebars
+	* dotenv
+	* method-override
+	* moment
+	* morgan
+	* passport
+	* passport-google-oauth20
+1. Install the developer dependencies:
+	* nodemon
+	* cross-env
 
-## 2. Workflow
-(a) Setup handlebar engine
-(b) Use font-awesome and materialize for css
-(c) Setup google authentication
-	- Register application with Google
-	- Use passport for authentication middleware
-(d) Route protection middleware
-(e) Store session in database to avoid kicking out when page is reloaded
-(f) Make persistent logins
-(g) Make data models for user and blog
-(h) Error handling
-(i) Create add story button
-(j) Add ck-editor
-(k) Create helper functions for express-handler
-(l) Generating selected options in handlebar template when editing stories
-(m) Perform PUT request at places where client does not support using method-override
+## Workflow
+1. Setup handlebar engine
+1. Use font-awesome and materialize for css
+1. Setup google authentication
+	* Register application with Google
+	* Use passport for authentication middleware
+1. Route protection middleware
+1. Store session in database to avoid kicking out when page is reloaded
+1. Make persistent logins
+1. Make data models for user and blog
+1. Error handling
+1. Create add story button
+1. Add ck-editor
+1. Create helper functions for express-handler
+1. Generating selected options in handlebar template when editing stories
+1. Perform PUT request at places where client does not support using method-override
 
 
