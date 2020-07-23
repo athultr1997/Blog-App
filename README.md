@@ -1,5 +1,7 @@
 # Building a Blogging Web Application from Scratch
 
+https://travis-ci.com/athultr1997/Blog-App.svg?branch=master
+
 To see the application live in action please visit [Blog Application](https://blog-application-2020.herokuapp.com/)
 
 ## Setup
